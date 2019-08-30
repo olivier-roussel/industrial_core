@@ -288,6 +288,11 @@ public:
     return valid_fields_ & field;
   }
 
+  industrial::shared_types::shared_int getValidFields() /*const*/ // XXX constness consistency wrt other methods
+  {
+    return valid_fields_;
+  }
+
   // Overrides - SimpleSerialize
   bool load(industrial::byte_array::ByteArray *buffer);
   bool unload(industrial::byte_array::ByteArray *buffer);
