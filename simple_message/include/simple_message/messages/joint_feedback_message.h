@@ -135,9 +135,9 @@ public:
     return this->data_.getAccelerations(dest);
   }
 
-private:
-
   industrial::joint_feedback::JointFeedback data_;
+
+private:
 
 };
 
